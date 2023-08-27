@@ -1,6 +1,15 @@
 <RCC>
     <qresource prefix="/">
-        <file>main.qml</file>
-        <file>File.qml</file>
+        <file>qmlFiles/LeftDisplayArea.qml</file>
+        <file>qmlFiles/Navbar.qml</file>
+        <file>qmlFiles/CounterNav.qml</file>
+        <file>qmlFiles/SettingsNav.qml</file>
+        <file>qmlFiles/AboutNav.qml</file>
+        <file>qmlFiles/About.qml</file>
+        <file>qmlFiles/CounterOptions.qml</file>
+        <file>qmlFiles/Settings.qml</file>
+        <file>qmlFiles/RightDisplayArea.qml</file>
+        <file>qmlFiles/FileSelect.qml</file>
+        <file>qmlFiles/CrochetPatternCounter.qml</file>
     </qresource>
 </RCC>

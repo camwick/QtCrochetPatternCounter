@@ -8,19 +8,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt6 6.2 REQUIRED COMPONENTS Quick)
 
+qt_add_resources(RESOURCE_FILES qml.qrc)
 
 qt_add_executable(appCrochetPatternCounter
     main.cpp
-    qmlObjects/navigation.h qmlObjects/navigation.cpp
-    qmlObjects/selectFile.h qmlObjects/selectFile.cpp
-    qmlObjects/inputFields.h qmlObjects/inputFields.cpp
-    qmlObjects/countButton.h qmlObjects/countButton.cpp
-)
-
-qt_add_qml_module(appCrochetPatternCounter
-    URI CrochetPatternCounter
-    VERSION 1.0
-    QML_FILES qml.qrc
+    ${RESOURCE_FILES}
+    qmlObjects/CounterNav.h qmlObjects/CounterNav.cpp
+    qmlObjects/CrochetPatternCounter.h qmlObjects/CrochetPatternCounter.cpp
+    qmlObjects/LeftDisplayArea.h qmlObjects/LeftDisplayArea.cpp
+    qmlObjects/RightDisplayArea.h qmlObjects/RightDisplayArea.cpp
 )
 
 set_target_properties(appCrochetPatternCounter PROPERTIES
